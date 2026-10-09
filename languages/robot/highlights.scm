@@ -41,7 +41,9 @@
 (inline_python_expression) @string.special
 
 ; Variables and definitions
-(variable_definition (variable_name) @variable)
+(scalar_variable (variable_name) @variable)
+(list_variable (variable_name) @variable)
+(dictionary_variable (variable_name) @variable)
 (variable_definition) @storage.modifier
 
 ; Inline variable usages (scalar/list/dict)
@@ -52,7 +54,9 @@
 ] @variable
 
 ; Capture a variable name produced by other nodes (if present)
-(variable_definition (variable_name) @variable)
+(scalar_variable (variable_name) @variable)
+(list_variable (variable_name) @variable)
+(dictionary_variable (variable_name) @variable)
 
 ; Control structures: loops
 ; - Mark loop keywords and loop nodes so they receive a "keyword.control.loop" style
