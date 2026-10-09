@@ -8,4 +8,4 @@ repository = "https://github.com/mendes-jose/zed-robot.git"
 
 [grammars.robot]
 repository = "https://github.com/Hubro/tree-sitter-robot"
-rev = "b317756ae0fb90ca945f900c77cdd3513d0c0eb4"
+rev = "6bacedb56c9716e155b330f6e50084d7999f635e" # v1.5.0
